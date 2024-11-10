@@ -1,5 +1,5 @@
 
-items_list = ['арбуз', 'апельсин', 'банан', 'ананас', 'киви', 'банан']
+items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
 
 def find_index(request):
     for i in range(len(items_list)):
@@ -7,10 +7,11 @@ def find_index(request):
             return i
 
 for find_item in ['банан', 'груша', 'персик']:
-    index_item = find_index('апельсин')  
+    index_item = find_index('банан')  
     if index_item is not None:
         print(f"Первое вхождение товара '{find_item}' имеет индекс {index_item}.")
         break
     else:
         print(f"Товар не найден в списке.")
         break
+
